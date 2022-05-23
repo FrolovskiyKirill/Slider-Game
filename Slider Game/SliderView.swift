@@ -26,3 +26,9 @@ struct SliderView: UIViewRepresentable {
     typealias UIViewType = UISlider
 
 }
+
+struct SliderView_Previews: PreviewProvider {
+    static var previews: some View {
+        SliderView(value: .constant(0))
+    }
+}
