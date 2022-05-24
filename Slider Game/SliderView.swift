@@ -1,34 +1,57 @@
 //
-//  SliderView.swift
+//  SliderTest.swift
 //  Slider Game
 //
-//  Created by Кирилл on 23.05.2022.
+//  Created by Кирилл on 24.05.2022.
 //
 
 import SwiftUI
 
-struct SliderView: UIViewRepresentable {
-    
+struct SwiftUISlider: UIViewRepresentable {
+  
     @Binding var value: Double
-    
+  
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
+        slider.value = Float(value)
         slider.minimumValue = 0
         slider.maximumValue = 100
         
+        slider.thumbTintColor = .red
+        
+        slider.addTarget(
+            context.coordinator,
+            action: #selector(Coordinator.valueChanged(_:)),
+            for: .valueChanged
+        )
         return slider
     }
-    
+  
     func updateUIView(_ uiView: UISlider, context: Context) {
-        uiView.value = Float(value)
+        uiView.value = Float(self.value)
     }
-    
-    typealias UIViewType = UISlider
+    func makeCoordinator() -> SwiftUISlider.Coordinator {
+        Coordinator(value: $value)
+    }
+}
 
+extension SwiftUISlider {
+    class Coordinator: NSObject {
+
+        var value: Binding<Double>
+
+        init(value: Binding<Double>) {
+            self.value = value
+        }
+
+        @objc func valueChanged(_ sender: UISlider) {
+            self.value.wrappedValue = Double(sender.value)
+        }
+    }
 }
 
 struct SliderView_Previews: PreviewProvider {
     static var previews: some View {
-        SliderView(value: .constant(0))
+        SwiftUISlider(value: .constant(0))
     }
 }

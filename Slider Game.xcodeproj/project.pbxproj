@@ -11,7 +11,7 @@
 		ED23D786283BD0AE007F4A30 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23D785283BD0AE007F4A30 /* ContentView.swift */; };
 		ED23D788283BD0AF007F4A30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED23D787283BD0AF007F4A30 /* Assets.xcassets */; };
 		ED23D78B283BD0AF007F4A30 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED23D78A283BD0AF007F4A30 /* Preview Assets.xcassets */; };
-		ED23D792283C0CB7007F4A30 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23D791283C0CB7007F4A30 /* SliderView.swift */; };
+		ED23D794283CC3BC007F4A30 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED23D793283CC3BC007F4A30 /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		ED23D785283BD0AE007F4A30 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ED23D787283BD0AF007F4A30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED23D78A283BD0AF007F4A30 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ED23D791283C0CB7007F4A30 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
+		ED23D793283CC3BC007F4A30 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 			children = (
 				ED23D783283BD0AE007F4A30 /* Slider_GameApp.swift */,
 				ED23D785283BD0AE007F4A30 /* ContentView.swift */,
-				ED23D791283C0CB7007F4A30 /* SliderView.swift */,
+				ED23D793283CC3BC007F4A30 /* SliderView.swift */,
 				ED23D787283BD0AF007F4A30 /* Assets.xcassets */,
 				ED23D789283BD0AF007F4A30 /* Preview Content */,
 			);
@@ -140,8 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED23D792283C0CB7007F4A30 /* SliderView.swift in Sources */,
 				ED23D786283BD0AE007F4A30 /* ContentView.swift in Sources */,
+				ED23D794283CC3BC007F4A30 /* SliderView.swift in Sources */,
 				ED23D784283BD0AE007F4A30 /* Slider_GameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
