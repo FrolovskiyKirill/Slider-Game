@@ -55,3 +55,5 @@ struct SliderView_Previews: PreviewProvider {
         SwiftUISlider(value: .constant(0))
     }
 }
+
+//Изменение цвета ползунка реализовать не успел(( С нетерпением жду отзыв и разбор! Заранее спасибо!
